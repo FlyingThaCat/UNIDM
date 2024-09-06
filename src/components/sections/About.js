@@ -2,6 +2,7 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 import profilePic from '../../../public/me.jpg';
+import downArrow from'../../../public/lotties/down-arrow.json';
 
 export const AboutSection = () => {
   return (
@@ -24,7 +25,7 @@ export const AboutSection = () => {
         </h2>
         </div>
         <div className="pt-80 mx-auto">
-        <lottie-player src="/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
+        <lottie-player src={downArrow} background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
         </div>
       </div>
     </>
