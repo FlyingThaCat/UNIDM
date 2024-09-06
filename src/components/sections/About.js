@@ -24,7 +24,7 @@ export const AboutSection = () => {
         </h2>
         </div>
         <div className="pt-80 mx-auto">
-        <lottie-player src="https://dm.jtu.my.id/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
+        <lottie-player src="/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
         </div>
       </div>
     </>
