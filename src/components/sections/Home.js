@@ -2,13 +2,14 @@ import Image from "next/image";
 dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 import Typewriter from 'typewriter-effect';
 import dynamic from 'next/dynamic';
+import notebookPic from '../../../public/notebook.png';
 
 export const HomeSection = () => {
   return (
     <>
       <div id="home" className="flex pt-20 flex-col h-screen lg:flex-row">
       <Image
-      src="/notebook.png"
+      src={notebookPic}
       width={470}
       height={470}
       alt="notebook image"

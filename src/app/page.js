@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { ScreenWarning } from "@/components/ScreenWarning";
 
 
+
 export default function Home() {
   const [dayData, setDayData] = useState(null);
   const [showModal, setShowModal] = useState(false);

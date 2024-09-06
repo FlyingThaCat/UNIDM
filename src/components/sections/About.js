@@ -1,13 +1,14 @@
 import Image from "next/image";
 import dynamic from 'next/dynamic';
 dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
+import profilePic from '../../../public/me.jpg';
 
 export const AboutSection = () => {
   return (
     <>
       <div id="aboutme" className="flex pt-20 h-screen flex-row-reverse">
         <div className="relative w-[500px] h-[500px]">
-          <Image alt="notebook image" src="/me.jpg" layout="fill" objectFit="contain" />
+          <Image alt="notebook image" src={profilePic} layout="fill" objectFit="contain" />
         </div>
         <div className="flex flex-col gap-2 max-w-3xl">
           <h1 className="text-5xl font-bold min-w-[660px]">About Me</h1>
