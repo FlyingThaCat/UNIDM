@@ -3,7 +3,6 @@ dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
 import Typewriter from 'typewriter-effect';
 import dynamic from 'next/dynamic';
 import notebookPic from '../../../public/notebook.png';
-import downArrow from'../../../public/lotties/down-arrow.json';
 
 export const HomeSection = () => {
   return (
@@ -39,7 +38,7 @@ export const HomeSection = () => {
           <h3 className="min-w-[660px]">Created by John Tjandra Utomo - Informatika - Instigator 11</h3>
         </div>
         <div className="pt-80 mx-auto">
-        <lottie-player src={downArrow} background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
+        <lottie-player src="https://dm.jtu.my.id/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
         </div>
       </div>
     </>
