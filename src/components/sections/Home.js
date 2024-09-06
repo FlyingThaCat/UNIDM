@@ -1,10 +1,13 @@
 import Image from "next/image";
-dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
+import React, { useRef } from "react";
 import Typewriter from 'typewriter-effect';
-import dynamic from 'next/dynamic';
 import notebookPic from '../../../public/notebook.png';
 
 export const HomeSection = () => {
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
   return (
     <>
       <div id="home" className="flex pt-20 flex-col h-screen lg:flex-row">

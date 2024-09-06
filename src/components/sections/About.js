@@ -1,9 +1,12 @@
 import Image from "next/image";
-import dynamic from 'next/dynamic';
-dynamic(() => import('@lottiefiles/lottie-player'), { ssr: false });
+import React, { useRef } from "react";
 import profilePic from '../../../public/me.jpg';
 
 export const AboutSection = () => {
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
   return (
     <>
       <div id="aboutme" className="flex pt-20 h-screen flex-row-reverse">
@@ -24,7 +27,7 @@ export const AboutSection = () => {
         </h2>
         </div>
         <div className="pt-80 mx-auto">
-        <lottie-player src="/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
+        <lottie-player src="https://dm.jtu.my.id/lotties/down-arrow.json" background="transparent"  speed="1"  style={{ width: '400px', height: '400px' }} loop autoplay></lottie-player>
         </div>
       </div>
     </>
